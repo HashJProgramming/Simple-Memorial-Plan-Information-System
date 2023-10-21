@@ -46,7 +46,7 @@ if (!isset($_SESSION['username'])) {
                 </div>
             </nav>
 
-            <div class="container bg-white rounded pt-4 pb-4">
+            <div class="container bg-white rounded pt-4 pb-4 mt-5">
                 <div class="d-sm-flex justify-content-between align-items-center mb-4">
                     <h3 class="mb-0">Dashboard</h3><button class="btn btn-light btn-sm d-none d-sm-inline-block shadow-sm" type="button" data-bs-target="#add" data-bs-toggle="modal"><i class="fas fa-download text-body-emphasis fa-sm text-white-50"></i>Upload Video</button>
                 </div>
@@ -60,10 +60,10 @@ if (!isset($_SESSION['username'])) {
                         <div class="d-sm-flex justify-content-between align-items-center mb-4">
                             <div class="row row-cols-1">
                                 <div class="col">
-                                    <h3 class="mb-0" id="video-title"></h3>
+                                    <h3 class="mb-0" id="video-title">No video selected</h3>
                                 </div>
                                 <div class="col">
-                                    <h6 id="video-description"></h6>
+                                    <h6 id="video-description">Select video first</h6>
                                 </div>
                             </div>
                             <a id="video-download" class="btn btn-light btn-sm d-none d-sm-inline-block shadow-sm" role="button" href="#" download>
