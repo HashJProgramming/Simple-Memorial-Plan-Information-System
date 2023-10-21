@@ -147,7 +147,7 @@ if (!isset($_SESSION['username'])) {
                             </div>
                             <div class="modal-footer">
                                 <button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button>
-                                <form action="delete-video.php" method="post">
+                                <form action="functions/delete-video.php" method="post">
                                     <input type="hidden" name="id" value="" />
                                     <button class="btn btn-danger" type="submit">Remove</button>
                                 </form>
