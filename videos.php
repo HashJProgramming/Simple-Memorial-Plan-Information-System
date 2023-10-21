@@ -48,7 +48,7 @@ if (!isset($_SESSION['username'])) {
 
             <div class="container bg-white rounded pt-4 pb-4 mt-5">
                 <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                    <h3 class="mb-0">Dashboard</h3><button class="btn btn-light btn-sm d-none d-sm-inline-block shadow-sm" type="button" data-bs-target="#add" data-bs-toggle="modal"><i class="fas fa-download text-body-emphasis fa-sm text-white-50"></i>Upload Video</button>
+                    <img src="assets/img/logo2gold.png" alt=""><button class="btn btn-light btn-sm d-none d-sm-inline-block shadow-sm" type="button" data-bs-target="#add" data-bs-toggle="modal"><i class="fas fa-download text-body-emphasis fa-sm text-white-50"></i>Upload Video</button>
                 </div>
                 <div class="row">
                     <div class="col-xl-8">
