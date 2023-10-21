@@ -3,7 +3,7 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 if (!isset($_SESSION['username'])) {
-    header('location: login.php');
+    header('location: login.php?type=error&message=Please login first');
 }
 ?>
 <!DOCTYPE html>
