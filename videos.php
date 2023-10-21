@@ -33,7 +33,10 @@ if (!isset($_SESSION['username'])) {
         <div id="content">
             <nav class="navbar navbar-expand-md bg-body py-3 mb-4 shadow-lg">
                 <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navcol-3"><img src="assets/img/logo2gold.png">
+                    <div class="collapse navbar-collapse" id="navcol-3">
+                        <a href="index.php">
+                            <img src="assets/img/logo2gold.png">
+                        </a>
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
@@ -167,6 +170,7 @@ if (!isset($_SESSION['username'])) {
     <script src="assets/js/Lightbox-Gallery-baguetteBox.min.js"></script>
     <script src="assets/js/Lightbox-Gallery.js"></script>
     <script src="assets/js/datatables.min.js"></script>
+    <script src="assets/js/sweetalert2.all.min.js"></script>
     <script>
         $('#myTable').DataTable({
             dom: '<"top"f>',
@@ -175,11 +179,10 @@ if (!isset($_SESSION['username'])) {
                 searchPlaceholder: "Search Videos..."
             },
             columnDefs: [{
-                    target: 0,
-                    visible: false,
-                    searchable: false
-                },
-            ]
+                target: 0,
+                visible: false,
+                searchable: false
+            }, ]
         });
 
         $(document).ready(function() {

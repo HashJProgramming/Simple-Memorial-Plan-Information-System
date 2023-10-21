@@ -32,7 +32,10 @@ if (!isset($_SESSION['username'])) {
         <div id="content">
             <nav class="navbar navbar-expand-md bg-body py-3 mb-4 shadow-lg">
                 <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navcol-3"><img src="assets/img/logo2gold.png">
+                    <div class="collapse navbar-collapse" id="navcol-3">
+                        <a href="index.php">
+                            <img src="assets/img/logo2gold.png">
+                        </a>
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                             <li class="nav-item"><a class="nav-link active" href="gallery.php">Gallery</a></li>
