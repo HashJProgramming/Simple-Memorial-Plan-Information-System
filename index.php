@@ -24,6 +24,7 @@ if (!isset($_SESSION['username'])) {
     <link rel="stylesheet" href="assets/css/Nunito.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="assets/css/datatables.min.css">
 </head>
 
 <body id="page-top">
@@ -53,7 +54,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                     <div class="card-body">
                         <div class="table-responsive table mt-2" id="dataTable-1" role="grid" aria-describedby="dataTable_info">
-                            <table class="table my-0" id="dataTable">
+                            <table class="table my-0" id="myTable">
                                 <thead>
                                     <tr>
                                         <th>Photo</th>
@@ -229,7 +230,16 @@ if (!isset($_SESSION['username'])) {
     <script src="assets/js/vanta.clouds2.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/sweetalert2.all.min.js"></script>
+    <script src="assets/js/datatables.min.js"></script>
     <script>
+        $('#myTable').DataTable({
+            dom: '<"top"f>',
+            language: {
+                search: "",
+                searchPlaceholder: "Search member..."
+            }
+        });
+
         const photoFileAdd = document.getElementById("photoFileAdd");
         const previewPhotoAdd = document.getElementById("previewPhotoAdd");
         photoFileAdd.onchange = () => {

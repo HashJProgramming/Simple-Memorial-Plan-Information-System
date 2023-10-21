@@ -16,6 +16,8 @@ foreach($members as $member){
         <tr>
             <td>
                 <img class="rounded-circle me-2" width="60" height="60" src="<?php echo 'functions/'.$member['photo']?>">
+            </td>
+            <td>
                 <?php echo $member['fullname']; ?>
             </td>
             <td>
