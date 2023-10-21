@@ -45,11 +45,13 @@ if (isset($_SESSION['username'])) {
                                         <h4 class="text-dark mb-4">Welcome Back!</h4>
                                     </div>
                                     <form class="user" method="post" action="functions/login.php">
-                                        <div class="mb-3"><input class="form-control form-control-user" type="text" placeholder="Username" name="username"></div>
-                                        <div class="mb-3"><input class="form-control form-control-user" type="password" placeholder="Password" name="password"></div>
+                                        <div class="mb-3"><input class="form-control form-control-user" type="text" placeholder="Username" name="username" value="<?php echo isset($_COOKIE['username']) ? $_COOKIE['username'] : ''; ?>"></div>
+                                        <div class="mb-3"><input class="form-control form-control-user" type="password" placeholder="Password" name="password" value="<?php echo isset($_COOKIE['password']) ? $_COOKIE['password'] : ''; ?>"></div>
                                         <div class="mb-3">
                                             <div class="custom-control custom-checkbox small">
-                                                <div class="form-check"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-1"><label class="form-check-label custom-control-label" for="formCheck-1">Remember Me</label></div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input custom-control-input" type="checkbox" name="remember" <?php echo isset($_COOKIE['username']) ? 'checked' : ''; ?>>
+                                                <label class="form-check-label custom-control-label" for="formCheck-1">Remember Me</label></div>
                                             </div>
                                         </div><button class="btn btn-primary d-block btn-user w-100 mb-5" type="submit">Login</button>
                                     </form>
